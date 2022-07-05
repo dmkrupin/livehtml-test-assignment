@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта">
+    <title>LiveHTML Test Task</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- font preload -->
+    <link rel="preload" href="fonts/Roboto-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Medium.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__content">
+            <a class="header__logo" href="#">
+              <svg width="210" height="134" aria-label="Логотип">
+                <use xlink:href="img/sprite_auto.svg#logo"></use>
+              </svg>
+            </a>
+            <nav class="header__nav">
+              <ul class="header__main-nav-list">
+                <li class="header__main-nav-item">
+                  <a href="sitemap.html">Каталог инструментов</a>
+                </li>
+                <li class="header__main-nav-item">
+                  <a href="sitemap.html">Все для сада</a>
+                </li>
+                <li class="header__main-nav-item">
+                  <a href="sitemap.html">Ручной инструмент</a>
+                </li>
+                <li class="header__main-nav-item">
+                  <a href="sitemap.html">Электрика</a>
+                </li>
+                <li class="header__main-nav-item">
+                  <a href="sitemap.html">Доставка</a>
+                </li>
+                <li class="header__main-nav-item">
+                  <a href="sitemap.html">Оплата</a>
+                </li>
+                <li class="header__main-nav-item">
+                  <a href="sitemap.html">О нас</a>
+                </li>
+              </ul>
+              <div class="header__user-nav">
+                <a href="sitemap.html">Вход</a>
+                <span>|</span>
+                <a href="sitemap.html">Регистрация</a>
+              </div>
+            </nav>
+            <div class="header__info">
+              <div class="header__panel">
+                <div class="header__banner"></div>
+                <div class="header__links">
+                  <a href="#">
+                    <svg width="19" height="18" aria-label="Корзина">
+                      <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                    </svg>
+                    <span>3 шт. / 17 250 р.</span>
+                  </a>
+                  <a href="#">
+                    <svg width="14" height="14" aria-label="Избранное">
+                      <use xlink:href="img/sprite_auto.svg#icon-star"></use>
+                    </svg>
+                    <span>Избранное (7)</span>
+                  </a>
+                  <a href="#">
+                    <svg width="18" height="16" aria-label="Сравнение">
+                      <use xlink:href="img/sprite_auto.svg#icon-compare"></use>
+                    </svg>
+                    <span>К сравнению (5)</span>
+                  </a>
+                </div>
+                <div class="header__cart">
+                  <a class="header__cart-item" href="#">
+                    <picture>
+                      <source type="image/webp"
+                      srcset="img/content/img-1.webp 1x,
+                      img/content/img-1@2x.webp 2x">
+                      <!-- 1x: 70px, 2x: 140px -->
+                      <img
+                      src="img/content/img-1.png"
+                      srcset="img/content/img-1@2x.png 2x"
+                      width="70" height="70" alt="В корзине">
+                    </picture>
+                  </a>
+                  <a class="header__cart-item" href="#">
+                    <picture>
+                      <source type="image/webp"
+                      srcset="img/content/img-2.webp 1x,
+                      img/content/img-2@2x.webp 2x">
+                      <!-- 1x: 70px, 2x: 140px -->
+                      <img
+                      src="img/content/img-2.png"
+                      srcset="img/content/img-2@2x.png 2x"
+                      width="70" height="70" alt="В корзине">
+                    </picture>
+                  </a>
+                  <a class="header__cart-item" href="#">
+                    <picture>
+                      <source type="image/webp"
+                      srcset="img/content/img-3.webp 1x,
+                      img/content/img-3@2x.webp 2x">
+                      <!-- 1x: 70px, 2x: 140px -->
+                      <img
+                      src="img/content/img-3.png"
+                      srcset="img/content/img-3@2x.png 2x"
+                      width="70" height="70" alt="В корзине">
+                    </picture>
+                  </a>
+                </div>
+                <div class="header__about">
+                  <p>
+                    <span>Время работы:</span>
+                    <span>10:00 &mdash; 19:00</span>
+                  </p>
+                  <a href="tel:84957212525">8 495 721-25-25</a>
+                </div>
+              </div>
+              <div class="header__controls">
+                <p>Москва</p>
+                <a href="sitemap.html">
+                  <svg width="7" height="7" aria-label="Сменить город">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                  </svg>
+                  <span>сменить</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu">
+            <a class="header__search" href="sitemap.html">
+              <svg width="210" height="134" aria-label="Поиск">
+                <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+              </svg>
+            </a>
+            <ul class="header__categories-list">
+              <li class="header__categories-item header__categories-item--is-active"><a href="#">Перфораторы</a></li>
+              <li class="header__categories-item"><a href="#">Дрели</a></li>
+              <li class="header__categories-item"><a href="#">Шлифмашины</a></li>
+              <li class="header__categories-item"><a href="#">Пистолеты</a></li>
+              <li class="header__categories-item"><a href="#">Электропилы</a></li>
+              <li class="header__categories-item"><a href="#">Наборы инструментов</a></li>
+              <li class="header__categories-item"><a href="#">Акксесуары</a></li>
+            </ul>
+            <a class="header__sale" href="sitemap.html">РАСПРОДАЖА</a>
+          </div>
+        </div>
+      </header>
+      <main>
+      </main>
+      <footer>
+        <div class="container"></div>
+      </footer>
+    </div>
+
+    <script src="js/vendor.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
